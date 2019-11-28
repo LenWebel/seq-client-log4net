@@ -1,6 +1,7 @@
 ﻿using System;
 using log4net;
 using log4net.Config;
+using log4net.Repository.Hierarchy;
 
 namespace SeqLog4NetExample
 {
@@ -8,7 +9,7 @@ namespace SeqLog4NetExample
     {
         static void Main()
         {
-            XmlConfigurator.Configure();
+            XmlConfigurator.Configure(new Hierarchy());
 
             var log = LogManager.GetLogger(typeof(Program));
 

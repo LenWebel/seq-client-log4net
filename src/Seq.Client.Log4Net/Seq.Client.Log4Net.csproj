@@ -1,6 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net40;net462;netstandard2.0</TargetFrameworks>
     <VersionPrefix>3.0.0</VersionPrefix>
     <Authors>Datalust Pty Ltd and Contributors</Authors>
     <Description>Apache log4net appender for .NET Framework and .NET Standard/Core that writes to the Seq log server over HTTP.</Description>
@@ -18,6 +17,7 @@
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <AssemblyOriginatorKeyFile>..\..\asset\Seq.Client-Public.snk</AssemblyOriginatorKeyFile>
     <LangVersion>7</LangVersion>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
   
   <ItemGroup>
